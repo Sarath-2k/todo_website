@@ -9,3 +9,5 @@ and in that mark the todos that you are already completed. If you marked 5 todos
 “ Congrats. 5 Tasks have been Successfully Completed ” (Use the concept of Promise() for the validation of 5 Completed TodoLists ). 
 
 When you click on the LogOut menu in the navbar, it should redirect to the login page. The whole User Interface should be responsive by using Bootstrap or any other Framework. 
+
+promise
