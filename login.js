@@ -1,21 +1,14 @@
 $(document).ready(function(){
-    function uservalid(redirect){
-        let username = $('#inputUser').val();
-        console.log("Username")
-        if(username=="admin"){
-            console.log("Password")
-            if($('$inputPassword').val()=="12345"){
-                console.log("Redirect")
-                redirect();
-            }
+    $("button").click(function(){
+        var user = $("#username").val();
+        console.log(user);
+        var pass = $("#password").val();
+        console.log(pass);
+        if(user == "admin" && pass=="12345"){
+            window.location.replace("home.html");
+            return false;
+        }else{
+            alert("Please check your credentials");
         }
-    }
-
-    function redirect(){        
-    location.href("https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_redirect_webpage")
-    }
-
-    $("#submitbtn").click(function(){
-        
-    })
-})
+    });
+});
