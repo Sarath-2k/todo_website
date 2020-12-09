@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 
-<body background="./images/3.jpg">
+<body background="./images/2.jpg">
     <!-- NavBar -->
     <div class="top-nav">
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(255, 255, 255, 0.2);">
@@ -27,25 +27,54 @@
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/kerala-tourism-title.png" height="70" alt="" loading="lazy">
-                </a>
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 head-tag">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html" target="_blank">To-Do List</a>
+                        <a class="nav-link" id="home" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Logout</a>
+                        <a class="nav-link" id="to-do" href="#" >To-Do List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="log-out" href="#">Logout</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!-- NavBarEnd -->
     </div>
+    <!-- NavBarEnd -->
+<br>
     <h1>To-Do</h1>
-    <div>
-
+    <div id="Site-msg" >
+        <br>
+        <p>
+            <h4>
+                Here, We will help you remember your goals and stay organised
+            </h4>
+            <br>
+            <h6>
+                Click on To-Do tab in navbar to check your progress
+            </h6>
+        </p>
     </div>
+    <br>
+    <div class="table-container">
+        <table class="table" id="table">
+            <thead class="thead-dark">
+            <tr>
+                <th>User ID</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>            
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+    <script src="home.js"></script>
+    
 
 </body>
 
